@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>DestProtect</title>
+  </head>
+  <body class="bg-[#F3F4F6]">
+    <!-- Navbar -->
+    <div class="flex flex-row p-5 max-w-[1700px] mx-auto container">
+      <div class="w-1/2 flex flex-row">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="DestProtect Logo"
+            class="w-25 h-15 filter contrast-300 brightness-65"
+          />
+        </a>
+        <a href="index.html" class="flex items-center ml-5">
+          <h1 class="text-2xl font-extrabold items-center cursor-pointer">
+            Dest Protect
+          </h1>
+        </a>
+      </div>
+      <div class="flex flex-row justify-end w-1/2">
+        <div class="flex flex-row justify-between gap-10 items-center mr-10">
+          <a
+            href="#"
+            class="text-xl font-normal cursor-pointer hover:bg-red-600 hover:text-white hover:p-4 hover:rounded-lg transition-all duration-300"
+            >Accueil</a
+          >
+          <a
+            href="#nos-services"
+            class="text-xl font-normal cursor-pointer hover:bg-red-600 hover:text-white hover:p-4 hover:rounded-lg transition-all duration-300"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-xl font-normal cursor-pointer hover:bg-red-600 hover:text-white hover:p-4 hover:rounded-lg transition-all duration-300"
+            >A propos</a
+          >
+          <a
+            href="#"
+            class="text-xl font-normal cursor-pointer hover:bg-red-600 hover:text-white hover:p-4 hover:rounded-lg transition-all duration-300"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      class="grid grid-cols-2 h-135 container mx-auto content-center items-center mb-15 mt-5"
+    >
+      <div class="container pl-7">
+        <h1 class="text-6xl/17 font-bold mb-4 font-bold">
+          Solutions de <span class="text-red-600">sécurité</span> et
+          <span class="text-red-600">technologie</span> pour votre entreprise
+        </h1>
+        <h2 class="text-4xl font-extralight mb-5">
+          "Votre sécurité, notre priorité absolue"
+        </h2>
+        <p class="text-xl font-light">
+          Protection complète et services technologiques adaptés à vos
+        </p>
+        <p class="text-xl font-light mb-7">
+          besoins. Expertise, fiabilité et innovation à votre service.
+        </p>
+        <div class="flex flex-column gap-5 mb-8">
+          <a
+            href="#nos-services"
+            class="bg-red-600 px-8 py-4 rounded-lg text-white cursor-pointer hover:bg-red-500 transition-all duration-300"
+          >
+            Nos services
+          </a>
+          <button
+            class="bg-transparent border-2 border-red-500 px-8 py-4 rounded-lg cursor-pointer hover:bg-red-100"
+          >
+            Contactez-nous
+          </button>
+        </div>
+        <div class="flex flex-column gap-5 items-center">
+          <div class="flex flex-row gap-2 items-center pr-5">
+            <img src="images/guard.png" class="w-6 h-6" />
+            <p>Protection garantie</p>
+          </div>
+          <div class="flex flex-row gap-2 items-center">
+            <img src="images/lock.png" class="w-6 h-6" />
+            <p>Service certifié</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid justify-center items-center">
+        <img
+          src="images/Image.png"
+          alt=""
+          class="rounded-xl w-175 h-full rotate-3"
+        />
+      </div>
+    </div>
+
+    <!-- Service section -->
+    <div id="nos-services" class="bg-white">
+      <div class="container mx-auto flex flex-col items-center">
+        <div class="mt-20 flex items-center flex-col">
+          <div class="mb-8">
+            <h1 class="text-3xl font-bold">Nos Services</h1>
+            <div
+              class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
+            ></div>
+          </div>
+          <h2>
+            Nous proposons une gamme complète de services de sécurité et de
+            technologies pour
+          </h2>
+          <h2>répondre aux besoins spécifiques de votre entreprise.</h2>
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid grid-cols-3 gap-10 mt-10 mb-10">
+          <!-- Card 1 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/camera.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/snap.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Vidéo surveillance</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Systèmes de caméras de sécurité haute
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                définition pour surveiller vos locaux 24h/24.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/alarm.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/bell.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Alarmes anti-intrusion et incendie</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Centrales d'alarmes performantes pour
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                protéger vos biens contre les intrusions et les incendies.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/acces.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/cle.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Contrôle d'accès</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Solutions de contrôle d'accès sécurisées pour
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                gérer les entrées et sorties de vos locaux.
+              </p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/reseau.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/wifi.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Réseaux et maintenance informatique</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Installation, configuration et maintenance de
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                réseaux WiFi et internet pour votre entreprise.
+              </p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/phone.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/miniphone.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Téléphonie d'entreprise</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Solutions de téléphonie professionnelle
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                adaptées aux besoins de votre entreprise.
+              </p>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/portail.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/cube.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Motorisation des portails</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Installation et maintenance de systèmes de
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                motorisation pour portails et barrières.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-10 mb-10">
+          <!-- Card 7 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/solaire.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/sun.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Énergie solaire et back-up</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Installation de systèmes d'énergie solaire et
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                solutions de secours énergétique.
+              </p>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="shadow-lg rounded-b-lg">
+            <img
+              class="rounded-t-lg w-full"
+              src="images/multi.png"
+              alt="camera image"
+            />
+            <div class="mt-4 px-5">
+              <img src="images/bag.png" class="mt-5" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Vente de matériel et consommables</h1>
+              </div>
+              <p class="mt-2 text-sm text-gray-600">
+                Large gamme de produits et consommables
+              </p>
+              <p class="mt-0 mb-10 text-sm text-gray-600">
+                pour tous vos besoins en sécurité et technologie.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service section -->
+    <div
+      id="pourquoi-nous"
+      class="container mx-auto flex flex-col items-center"
+    >
+      <div class="mt-20 flex items-center flex-col">
+        <div class="mb-8">
+          <h1 class="text-3xl font-bold">Pourquoi nous choisir ?</h1>
+          <div
+            class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
+          ></div>
+        </div>
+        <h2>
+          Découvrez ce qui fait de DestProtect le partenaire idéal pour la
+          sécurité et la
+        </h2>
+        <h2>technologie de votre entreprise.</h2>
+      </div>
+      <div class="grid grid-cols-3 gap-10 mt-10 mb-10">
+        <!-- Card 1 -->
+        <div class="shadow-lg/20 rounded-lg bg-white">
+          <div class="mt-4 px-5">
+            <div class="flex flex-row">
+              <img src="images/shield.png" class="mr-5 h-15" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Expertise reconnue</h1>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              Plus de 15 ans d'expérience dans la sécurité et
+            </p>
+            <p class="mt-0 mb-10 text-sm text-gray-600">la technologie</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="shadow-lg/20 rounded-lg bg-white">
+          <div class="mt-4 px-5">
+            <div class="flex flex-row">
+              <img src="images/time.png" class="mr-5 h-15" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Service 24/7</h1>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              Support technique et intervention d'urgence
+            </p>
+            <p class="mt-0 mb-10 text-sm text-gray-600">
+              disponibles jour et nuit
+            </p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="shadow-lg/20 rounded-lg bg-white">
+          <div class="mt-4 px-5">
+            <div class="flex flex-row">
+              <img src="images/ppl.png" class="mr-5 h-15" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Équipe qualifiée</h1>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              Techniciens certifiés et régulièrement formés
+            </p>
+            <p class="mt-0 mb-10 text-sm text-gray-600">
+              aux dernières technologies
+            </p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="shadow-lg/20 rounded-lg bg-white">
+          <div class="mt-4 px-5">
+            <div class="flex flex-row">
+              <img src="images/cube.png" class="mr-5 h-15" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Solutions sur mesure</h1>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              Systèmes personnalisés adaptés à vos besoins
+            </p>
+            <p class="mt-0 mb-10 text-sm text-gray-600">spécifiques</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="shadow-lg/20 rounded-lg bg-white">
+          <div class="mt-4 px-5">
+            <div class="flex flex-row">
+              <img src="images/hand.png" class="mr-5 h-15" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Service client premium</h1>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              Accompagnement personnalisé et suivi régulier
+            </p>
+            <p class="mt-0 mb-10 text-sm text-gray-600">de vos installations</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="shadow-lg/20 rounded-lg bg-white">
+          <div class="mt-4 px-5">
+            <div class="flex flex-row">
+              <img src="images/hand.png" class="mr-5 h-15" />
+              <div class="mt-1 font-bold text-gray-700 mt-5 mb-5">
+                <h1>Garantie satisfaction</h1>
+              </div>
+            </div>
+            <p class="mt-2 text-sm text-gray-600">
+              Engagement qualité et résultats garantis
+            </p>
+            <p class="mt-0 mb-10 text-sm text-gray-600"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ils nous ont fait confiance -->
+
+    <div id="confiance" class="bg-white">
+      <div class="container mx-auto flex flex-col items-center">
+        <div class="container mx-auto flex flex-col items-center">
+          <div class="mt-20 flex items-center flex-col">
+            <div class="mb-8">
+              <h1 class="text-3xl font-bold">Ils nous font confiance</h1>
+              <div
+                class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
+              ></div>
+            </div>
+            <h2>
+              Découvrez quelques-unes des entreprises qui ont choisi nos
+              solutions pour leur sécurité et
+            </h2>
+            <h2>leur infrastructure technologique.</h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 gap-10 mt-10 mb-10 w-4/5">
+          <!-- Card 1 -->
+          <div class="shadow-lg rounded-b-lg bg-blue">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-lg w-55 h-35 mt-5"
+                src="images/mupeci.png"
+                alt="camera image"
+              />
+            </div>
+            <div
+              class="mt-1 font-bold text-gray-700 mt-5 flex flex-col justify-center items-center"
+            >
+              <h1>Mupeci</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center px-5">
+              <span class="mb-5 text-sm text-gray-600">
+                Solutions de vidéosurveillance
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="shadow-lg rounded-b-lg bg-blue">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-lg w-55 h-35 mt-5"
+                src="images/tradex.png"
+                alt="camera image"
+              />
+            </div>
+            <div
+              class="mt-1 font-bold text-gray-700 mt-5 flex flex-col justify-center items-center"
+            >
+              <h1>Tradex</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center px-5">
+              <span class="mb-5 text-sm text-gray-600">
+                Solutions de vidéosurveillance
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="shadow-lg rounded-b-lg bg-blue">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-lg w-55 h-35 mt-5"
+                src="images/spar.png"
+                alt="camera image"
+              />
+            </div>
+            <div
+              class="mt-1 font-bold text-gray-700 mt-5 flex flex-col justify-center items-center"
+            >
+              <h1>Spar</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center px-5">
+              <span class="mb-5 text-sm text-gray-600">
+                Solutions de vidéosurveillance
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="shadow-lg rounded-b-lg bg-blue">
+            <div class="flex justify-center items-center">
+              <img
+                class="rounded-lg w-55 h-35 mt-5"
+                src="images/parti.png"
+                alt="camera image"
+              />
+            </div>
+            <div
+              class="mt-1 font-bold text-gray-700 mt-5 flex flex-col justify-center items-center"
+            >
+              <h1>Particulier</h1>
+            </div>
+            <div class="flex flex-col justify-center items-center px-5">
+              <span class="mb-5 text-sm text-gray-600"> Portail motorisé </span>
+            </div>
+          </div>
+        </div>
+        <div class="pb-10">
+          <h1>
+            Rejoignez plus de
+            <span class="text-red-600">10 entreprises</span> qui nous font déjà
+            confiance
+          </h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
