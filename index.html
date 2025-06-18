@@ -3,32 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="src/output.css" />
     <link rel="icon" type="image/png" href="images/logo.png" />
 
     <title>Dest Protect</title>
   </head>
   <body class="bg-[#F3F4F6]">
     <!-- ***********************************************************  Navbar  ********************************************** -->
+
     <div class="flex flex-row p-5 max-w-[1700px] mx-auto container">
-      <div class="w-1/2 flex flex-row">
+      <div class="w-full flex flex-row justify-between lg:justify-start">
         <a href="index.html">
           <img
             src="images/logo.png"
             alt="DestProtect Logo"
-            class="w-25 h-15 filter contrast-300 brightness-65"
+            class="w-20 h-15 filter contrast-300 brightness-65 sm:"
           />
         </a>
-        <a href="index.html" class="flex items-center ml-5">
-          <h1
-            class="text-xl md:text-2xl font-extrabold items-center cursor-pointer"
-          >
+        <a href="index.html" class="flex items-center sm:">
+          <h1 class="text-2xl font-black text-2xl items-center cursor-pointer">
             Dest Protect
           </h1>
         </a>
+        <button id="hamburgerl" class="sm: md: lg:hidden" href="index.html">
+          <img
+            src="images/hamburger.png"
+            alt="DestProtect Logo"
+            class="w-20 h-15 filter contrast-300 brightness-65 sm:"
+          />
+        </button>
       </div>
-      <div class="hidden md:flex flex-row justify-end w-1/2">
-        <div class="flex flex-row justify-between gap-10 items-center mr-10">
+
+      <!-- menu -->
+      <div class="hidden sm: md: lg:flex flex-row justify-end w-1/2">
+        <div class="flex flex-row justify-between gap-10 items-center lg:mr-10">
           <a
             href="#"
             class="text-xl font-normal cursor-pointer hover:bg-red-600 hover:text-white hover:p-4 hover:rounded-lg transition-all duration-300"
@@ -53,19 +61,52 @@
       </div>
     </div>
 
+    <!-- hidden menu -->
+    <div
+      id="menu"
+      class="hidden transition-all duration-300 delay-150 px-5 sm:px-8 py-4 rounded-lg text-white cursor-pointer hover:bg-red-500"
+    >
+      <div class="flex flex-col gap-10 items-center mr-10">
+        <button
+          href="#"
+          class="text-xl font-normal bg-red-600 px-8 py-4 cursor-pointer rounded-lg"
+        >
+          Accueil
+        </button>
+        <button
+          href="#nos-services"
+          class="text-xl font-normal bg-red-600 px-8 py-4 cursor-pointer rounded-lg"
+        >
+          Services
+        </button>
+        <button
+          href="#"
+          class="text-xl font-normal bg-red-600 px-8 py-4 cursor-pointer rounded-lg"
+        >
+          A propos
+        </button>
+        <button
+          href="#"
+          class="text-xl font-normal bg-red-600 px-8 py-4 cursor-pointer rounded-lg"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+
     <!-- ***********************************************************  Hero Section  **********************************************-->
     <div
-      class="md:grid grid-cols-2 h-140 container mx-auto content-center items-center mb-15 mt-5"
+      class="sm:grid md: lg:grid-cols-2 h-140 container mx-auto content-center items-center mb-15 mt-5"
     >
       <div class="container pl-7">
-        <img src="images/circle.png" class="absolute animate-bounce md:" />
+        <img src="images/circle.png" class="absolute animate-bounce sm:" />
         <h1
-          class="text-5xl font-bold mr-6 md:text-6xl/17 font-bold mb-4 font-bold"
+          class="text-5xl font-bold mr-6 sm: md:text-6xl/17 lg:text-5xl/13 xl:text-6xl/17 font-bold mb-4 font-bold"
         >
           Solutions de <span class="text-red-600">sécurité</span> et
           <span class="text-red-600">technologie</span> pour votre entreprise
         </h1>
-        <h2 class="text-3xl mr-8 md:text-4xl font-extralight mb-5">
+        <h2 class="text-3xl mr-8 sm:text-4xl font-extralight mb-5">
           "Votre sécurité, notre priorité absolue"
         </h2>
         <p class="mr-5 text-xl font-light">
@@ -74,20 +115,20 @@
         <p class="mr-5 text-xl font-light mb-7">
           besoins. Expertise, fiabilité et innovation à votre service.
         </p>
-        <div class="flex flex-column justify-start gap-5 mb-5 md:mb-8">
+        <div class="flex flex-column justify-start gap-5 mb-5 sm:mb-8">
           <a
             href="#nos-services"
-            class="bg-red-600 px-5 md:px-8 py-4 rounded-lg text-white cursor-pointer hover:bg-red-500 transition-all duration-300"
+            class="bg-red-600 px-5 sm:px-8 py-4 rounded-lg text-white cursor-pointer hover:bg-red-500 transition-all duration-300"
           >
             Nos services
           </a>
           <button
-            class="bg-transparent border-2 border-red-500 px-5 md:px-8 py-4 rounded-lg cursor-pointer hover:bg-red-100"
+            class="bg-transparent border-2 border-red-500 px-5 sm:px-8 py-4 rounded-lg cursor-pointer hover:bg-red-100"
           >
             Contactez-nous
           </button>
         </div>
-        <div class="flex flex-column items-center md:gap-5">
+        <div class="flex flex-column items-center sm:gap-5">
           <div class="flex flex-row gap-2 items-center pr-5">
             <img src="images/guard.png" class="w-6 h-6" />
             <p>Protection garantie</p>
@@ -98,7 +139,9 @@
           </div>
         </div>
       </div>
-      <div class="hidden md:grid justify-center items-center relative">
+      <div
+        class="hidden sm:hidden md: lg:grid justify-center items-center relative"
+      >
         <img
           src="images/circle.png"
           alt="circle"
@@ -122,18 +165,20 @@
               class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
             ></div>
           </div>
-          <h2 class="text-center md:">
+          <h2 class="text-center sm:">
             Nous proposons une gamme complète de services de sécurité et de
             technologies pour
           </h2>
-          <h2 class="text-center md:">
+          <h2 class="text-center sm:">
             répondre aux besoins spécifiques de votre entreprise.
           </h2>
         </div>
 
         <!-- Cards -->
 
-        <div class="grid mx-10 md:grid-cols-3 gap-10 mt-10 mb-10">
+        <div
+          class="grid mx-10 sm: md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-10"
+        >
           <!-- Card 1 -->
           <div class="shadow-lg rounded-b-lg">
             <img
@@ -255,7 +300,7 @@
             </div>
           </div>
         </div>
-        <div class="grid mx-10 md:grid-cols-2 gap-10 mb-10">
+        <div class="grid mx-10 sm: md:grid-cols-2 gap-10 mb-10">
           <!-- Card 7 -->
           <div class="shadow-lg rounded-b-lg">
             <img
@@ -312,15 +357,17 @@
             class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
           ></div>
         </div>
-        <h2 class="mx-5 text-center md:">
+        <h2 class="mx-5 text-center sm:">
           Découvrez ce qui fait de DestProtect le partenaire idéal pour la
           sécurité et la
         </h2>
         <h2>technologie de votre entreprise.</h2>
       </div>
-      <div class="gap-10 grid md:grid-cols-3 gap-10 mt-10 mb-10">
+      <div
+        class="gap-10 grid sm: md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 mb-10"
+      >
         <!-- Card 1 -->
-        <div class="py-3 shadow-lg/20 rounded-lg bg-white md:">
+        <div class="py-3 shadow-lg/20 rounded-lg bg-white sm:">
           <div class="mt-4 px-5">
             <div class="flex flex-row">
               <img src="images/shield.png" class="mr-5 h-15" />
@@ -331,11 +378,11 @@
             <p class="mt-2 text-sm text-gray-600">
               Plus de 15 ans d'expérience dans la sécurité et
             </p>
-            <p class="mt-0 md:mb-10 text-sm text-gray-600">la technologie</p>
+            <p class="mt-0 sm:mb-10 text-sm text-gray-600">la technologie</p>
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="py-3 shadow-lg/20 rounded-lg bg-white md:">
+        <div class="py-3 shadow-lg/20 rounded-lg bg-white sm:">
           <div class="mt-4 px-5">
             <div class="flex flex-row">
               <img src="images/time.png" class="mr-5 h-15" />
@@ -346,13 +393,13 @@
             <p class="mt-2 text-sm text-gray-600">
               Support technique et intervention d'urgence
             </p>
-            <p class="mt-0 md:mb-10 text-sm text-gray-600">
+            <p class="mt-0 sm:mb-10 text-sm text-gray-600">
               disponibles jour et nuit
             </p>
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="py-3 shadow-lg/20 rounded-lg bg-white md:">
+        <div class="py-3 shadow-lg/20 rounded-lg bg-white sm:">
           <div class="mt-4 px-5">
             <div class="flex flex-row">
               <img src="images/ppl.png" class="mr-5 h-15" />
@@ -363,13 +410,13 @@
             <p class="mt-2 text-sm text-gray-600">
               Techniciens certifiés et régulièrement formés
             </p>
-            <p class="mt-0 md:mb-10 text-sm text-gray-600">
+            <p class="mt-0 sm:mb-10 text-sm text-gray-600">
               aux dernières technologies
             </p>
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="py-3 shadow-lg/20 rounded-lg bg-white md:">
+        <div class="py-3 shadow-lg/20 rounded-lg bg-white sm:">
           <div class="mt-4 px-5">
             <div class="flex flex-row">
               <img src="images/cube.png" class="mr-5 h-15" />
@@ -380,11 +427,11 @@
             <p class="mt-2 text-sm text-gray-600">
               Systèmes personnalisés adaptés à vos besoins
             </p>
-            <p class="mt-0 md:mb-10 text-sm text-gray-600">spécifiques</p>
+            <p class="mt-0 sm:mb-10 text-sm text-gray-600">spécifiques</p>
           </div>
         </div>
         <!-- Card 5 -->
-        <div class="py-3 shadow-lg/20 rounded-lg bg-white md:">
+        <div class="py-3 shadow-lg/20 rounded-lg bg-white sm:">
           <div class="mt-4 px-5">
             <div class="flex flex-row">
               <img src="images/hand.png" class="mr-5 h-15" />
@@ -395,13 +442,13 @@
             <p class="mt-2 text-sm text-gray-600">
               Accompagnement personnalisé et suivi régulier
             </p>
-            <p class="mt-0 md:mb-10 text-sm text-gray-600">
+            <p class="mt-0 sm:mb-10 text-sm text-gray-600">
               de vos installations
             </p>
           </div>
         </div>
         <!-- Card 6 -->
-        <div class="py-3 shadow-lg/20 rounded-lg bg-white md:">
+        <div class="py-3 shadow-lg/20 rounded-lg bg-white sm:">
           <div class="mt-4 px-5">
             <div class="flex flex-row">
               <img src="images/hand.png" class="mr-5 h-15" />
@@ -429,14 +476,16 @@
                 class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
               ></div>
             </div>
-            <h2 class="text-center md:">
+            <h2 class="text-center sm:">
               Découvrez quelques-unes des entreprises qui ont choisi nos
               solutions pour leur sécurité et
             </h2>
             <h2>leur infrastructure technologique.</h2>
           </div>
         </div>
-        <div class="grid md:grid-cols-4 gap-10 mt-10 mb-10 w-4/5">
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 mb-10 w-4/5"
+        >
           <!-- Card 1 -->
           <div class="shadow-lg rounded-b-lg bg-blue">
             <div class="flex justify-center items-center">
@@ -519,8 +568,8 @@
             </div>
           </div>
         </div>
-        <div class="pb-10 mx-5 md:">
-          <h1 class="text-center md:">
+        <div class="pb-10 mx-5 sm:">
+          <h1 class="text-center sm:">
             Rejoignez plus de
             <span class="text-red-600">10 entreprises</span> qui nous font déjà
             confiance
@@ -532,30 +581,30 @@
     <!-- ***********************************************************      À propos de notre entreprise     ********************************************** -->
 
     <div class="container mx-auto flex flex-col">
-      <div class="mb-10 mt-20 mx-5 md:">
+      <div class="mb-10 mt-20 mx-5 s:">
         <h1 class="text-3xl font-bold">À propos de notre entreprise</h1>
         <div
-          class="w-4/15 left-2/13 md: w-1/15 left-1/13 absolute -translate-x-1/2 mt-2 h-1 bg-red-500"
+          class="w-4/15 left-2/13 sm:w-1/15 left-1/13 absolute -translate-x-1/2 mt-2 h-1 bg-red-500"
         ></div>
       </div>
       <div
-        class="container mx-auto md:grid grid-cols-2 gap-10 mb-20 items-center content-center"
+        class="container mx-auto grid sm:mb-10 md: lg:grid-cols-2 gap-10 mb-20 items-center content-center"
       >
         <div>
-          <p class="mb-5 mx-5 text-xl/6 font-thin md:">
+          <p class="mb-5 mx-5 text-xl/6 font-thin sm:">
             Depuis notre création, nous nous engageons à fournir des solutions
             de sécurité et de technologie de pointe pour protéger vos biens et
             optimiser vos opérations. Notre mission est de vous offrir
             tranquillité d'esprit et efficacité grâce à nos services
             professionnels.
           </p>
-          <p class="mb-5 mx-5 text-xl/6 font-thin md:">
+          <p class="mb-5 mx-5 text-xl/6 font-thin sm:">
             Nous combinons expertise technique, équipements de qualité et
             service client exceptionnel pour garantir votre satisfaction. Que
             vous soyez une petite entreprise ou une grande organisation, nous
             avons les solutions adaptées à vos besoins
           </p>
-          <div class="grid md:grid-cols-2 gap-5 mt-10 px-7">
+          <div class="grid sm:grid-cols-2 gap-5 mt-10 px-7">
             <!-- Card 1 -->
             <div class="flex flez-row gap-3">
               <img src="images/tick.png" alt="tick" class="h-6 mt-1" />
@@ -602,7 +651,7 @@
             </div>
           </div>
         </div>
-        <div class="mx-5 mt-8 grid grid-cols-1 place-items-center md:">
+        <div class="mx-5 mt-8 grid grid-cols-1 place-items-center sm:">
           <img
             src="images/solaire2.png"
             alt=""
@@ -614,8 +663,12 @@
 
     <!-- ***********************************************************      contactez-nous     ********************************************** -->
     <div class="bg-white">
-      <div class="container mx-auto flex flex-col items-center pt-10 md:pt-20">
-        <img src="images/banner.png" alt="banner" class="h-50 md:w-2/4" />
+      <div class="container mx-auto flex flex-col items-center pt-10 sm:pt-20">
+        <img
+          src="images/banner.png"
+          alt="banner"
+          class="sm:w-2/4 h-75 xl:h-100"
+        />
 
         <div class="mx-auto flex flex-col items-center mb-25">
           <div class="mt-20 flex items-center flex-col">
@@ -625,7 +678,7 @@
                 class="absolute left-1/2 -translate-x-1/2 mt-2 w-1/15 h-1 bg-red-500"
               ></div>
             </div>
-            <h2 class="mx-5 text-center md:">
+            <h2 class="mx-5 text-center sm:">
               Vous avez des questions ou vous souhaitez obtenir un devis ?
               N'hésitez pas à nous
             </h2>
@@ -634,10 +687,12 @@
         </div>
 
         <!-- form -->
-        <div class="grid justify-items-center md:grid-cols-2 gap-8">
-          <div class="w-80 md:w-xl mb-20 shadow-lg/30 rounded-lg py-10 px-8">
+        <div class="grid justify-items-center lg:grid-cols-2 gap-8">
+          <div
+            class="w-80 sm:w-100 md:w-xl mb-20 shadow-lg/30 rounded-lg px-8 py-10 lg:w-115 xl:w-150"
+          >
             <form action="">
-              <h1 class="font-bold text-gray-700 text-center md:">
+              <h1 class="font-bold text-gray-700 text-center sm:">
                 Envoyez-nous un message
               </h1>
 
@@ -649,7 +704,7 @@
                 class="w-full p-2 border border-gray-300 rounded-lg"
               />
 
-              <label for="email" class="block mt-5 mb-2">Email</label>
+              <label for="email" required class="block mt-5 mb-2">Email</label>
               <input
                 type="email"
                 id="email"
@@ -666,12 +721,12 @@
               />
 
               <label for="message" class="block mt-5 mb-2">Message</label>
-              <input
-                type="text"
+              <textarea
+                required
                 id="Sujet"
-                placeholder="Votre message"
-                class="w-full p-2 border border-gray-300 rounded-lg h-50 mb-5"
-              />
+                placeholder="Votre message..."
+                class="w-full border border-gray-300 rounded-lg h-50 mb-5 p-2"
+              ></textarea>
               <button
                 class="w-full bg-red-600 px-8 py-4 rounded-lg text-white cursor-pointer hover:bg-red-500 transition-all duration-300"
               >
@@ -680,7 +735,7 @@
             </form>
           </div>
           <div
-            class="w-80 md:w-xl mb-20 shadow-lg/30 rounded-lg py-10 px-8 bg-red-50/40"
+            class="w-80 sm:w-100 md:w-xl mb-20 shadow-lg/30 rounded-lg py-10 px-8 bg-red-50/40 lg:w-115 xl:w-150"
           >
             <h1 class="font-bold text-gray-700 mb-5">
               Envoyez-nous un message
@@ -745,7 +800,7 @@
     <!-- ***********************************************************      footer     ********************************************** -->
     <div class="bg-[#111827]">
       <div class="container mx-auto pt-15 w-10/12">
-        <div class="flex flex-col md:flex-row gap-10 justify-between mb-10">
+        <div class="flex sm:flex-col gap-10 justify-between mb-10 lg:flex-row">
           <div class="flex flex-col">
             <div class="w-1/2 flex flex-row mb-8">
               <a href="index.html">
@@ -815,5 +870,6 @@
         </div>
       </div>
     </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
